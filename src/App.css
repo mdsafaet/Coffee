@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+.bg-custom {
+  background-image: url('./assets/banner.jpg');
+  height: 200px;
+
+
+}
