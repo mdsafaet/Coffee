@@ -34,7 +34,7 @@ export const Nav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Signup</a>
+    <Link to={'/'} className="btn">Signup</Link>
   </div>
 </div>
 
