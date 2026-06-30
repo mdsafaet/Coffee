@@ -1,13 +1,15 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { Home } from "../../pages/Home";
 import { Mainlayout } from "../../layouts/Mainlayout";
-import { NoPage } from "../../pages/NoPage";
+
 import { Children } from "react";
-import { Coffee } from "../../pages/Coffee";
 import { Dashboard } from "../../pages/Dashboard";
-import Template from "../../pages/Template";
-import Practice from "../../pages/Practice";
-import One from "../../pages/One";
+
+
+import BooksDetails from "../../components/BooksDetails";
+import ListedBooks from "../../components/ListedBooks";
+import NoPage from "../../pages/NoPage";
+
 
 
 
@@ -22,20 +24,28 @@ const routes = createBrowserRouter([
    
    },
    {
-    path: "/coffee", element: <Coffee />,
+    path: "/books/:bookId", element: <BooksDetails />,
+
+   },
+   {
+    path: "/listedbooks", element: <ListedBooks />,
    
    },
       {
     path: "/dashboard", element: <Dashboard />,
    
    },
-   {
-    path: "/template1", element: <Template />,
-   },{
-    path: "/practice", element: <Practice />,
-   },{
-    path: "/one", element: <One />,
-   }
+    {
+    
+    },
+
+    {
+        path: "/no-page", element: <NoPage />,
+    },
+
+    {
+      path: "*", element: <Navigate to="/no-page" />
+    }
 
 
 
@@ -47,10 +57,8 @@ const routes = createBrowserRouter([
    
 
 
-  {
-    path: "*",
-    element: <Navigate to="/coffee"  />,
-  },
+  
+
 
 
 ]);

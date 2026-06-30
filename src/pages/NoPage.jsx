@@ -5,9 +5,7 @@ export const NoPage = () => {
   return (
     <div>
         <h3>No Page Found </h3>   
-    
-
-
+  
        <Link to={'/'}>
         <button>Back to home</button>
        </Link>
@@ -17,4 +15,6 @@ export const NoPage = () => {
   );
 
 };
+
+export default NoPage;
 

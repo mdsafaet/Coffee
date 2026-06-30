@@ -5,7 +5,7 @@ export const Banner = () => {
   return (
     <div>
       <div
-  className="hero min-h-screen bg-custom " 
+  className="hero min-h-screen bg-custom mb-10 " 
 
 >
   <div className="hero-overlay"></div>

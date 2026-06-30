@@ -9,10 +9,11 @@ export const Home = () => {
     <div>
     <Banner/> 
     <Heading 
-    title='Brrowse Coffees by Category' 
-    subtitle='Explore our wide range of coffee categories to find your perfect brew.'
+    title='Browse books by Category' 
+    subtitle='Explore our wide range of book categories to find your perfect read.'
      />
-    <Books />
+    < Books
+     />
 
     
     </div>

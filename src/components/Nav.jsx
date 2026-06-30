@@ -1,6 +1,7 @@
+
 import React from 'react'
 import '../app.css' 
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 
 
 export const Nav = () => {
@@ -26,9 +27,39 @@ export const Nav = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-8">
 
-       <Link to={'/'} >Home</Link>
-       <Link to={'/coffee'} >Books</Link>
-       <Link to={'/dashboard'} >Dashboard</Link>
+      <NavLink
+        to="/"
+        end
+        className={({ isActive }) =>
+          isActive
+            ? "text-green-600 font-bold border-b-2 border-green-600"
+            : "text-gray-700 hover:text-green-600"
+        }
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/listedbooks"
+        className={({ isActive }) =>
+          isActive
+            ? "text-green-600 font-bold border-b-2 border-green-600"
+            : "text-gray-700 hover:text-green-600"
+        }
+      >
+        Listed Books
+      </NavLink>
+
+      <NavLink
+        to="/dashboard"
+        className={({ isActive }) =>
+          isActive
+            ? "text-green-600 font-bold border-b-2 border-green-600"
+            : "text-gray-700 hover:text-green-600"
+        }
+      >
+        Dashboard
+      </NavLink>
    
     
     </ul>
