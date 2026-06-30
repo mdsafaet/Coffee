@@ -9,6 +9,8 @@ import { Children } from "react";
 import BooksDetails from "../../components/BooksDetails";
 import ListedBooks from "../../components/ListedBooks";
 import NoPage from "../../pages/NoPage";
+import Dashboard from "../../pages/Dashboard";
+
 
 
 
@@ -35,9 +37,7 @@ const routes = createBrowserRouter([
     path: "/dashboard", element: <Dashboard />,
    
    },
-    {
-    
-    },
+   
 
     {
         path: "/no-page", element: <NoPage />,
